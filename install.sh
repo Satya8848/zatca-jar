@@ -14,7 +14,7 @@ git clone https://github.com/aasif-patel/zatca_sdk3.3.git
 
 # Step 3: Run command sh ~/.bash_profile
 echo "Running command: sh ~/.bash_profile..."
-sh ~/.bash_profile
+sh ~/.profile
 
 # Step 4: Unzip the sdk.zip file
 echo "Unzipping sdk.zip file..."
@@ -30,7 +30,7 @@ echo "Running command: ./install.sh..."
 
 # Step 7: Run sh ~/.bash_profile
 echo "Running command: sh ~/.bash_profile..."
-sh ~/.bash_profile
+sh ~/.profile
 
 # Step 8: Navigate to $FATOORA_HOME
 echo "Navigating to $FATOORA_HOME..."
