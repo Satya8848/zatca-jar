@@ -26,6 +26,7 @@ cd zatca_sdk3.3
 
 # Step 6: Run install.sh
 echo "Running command: ./install.sh..."
+chmod +x install.sh
 ./install.sh
 
 # Step 7: Run sh ~/.bash_profile
