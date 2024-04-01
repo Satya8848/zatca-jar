@@ -10,6 +10,7 @@ sudo apt-get install jq
 echo "Downloading sdk.zip file..."
 # Add code to download sdk.zip file
 # Example: wget https://example.com/sdk.zip
+git clone https://github.com/aasif-patel/zatca_sdk3.3.git
 
 # Step 3: Run command sh ~/.bash_profile
 echo "Running command: sh ~/.bash_profile..."
@@ -17,11 +18,11 @@ sh ~/.bash_profile
 
 # Step 4: Unzip the sdk.zip file
 echo "Unzipping sdk.zip file..."
-unzip sdk.zip
+#unzip sdk.zip
 
 # Step 5: Navigate to the root folder of the sdk
 echo "Navigating to the root folder of the sdk..."
-cd sdk_root_folder_path
+cd zatca_sdk3.3
 
 # Step 6: Run install.sh
 echo "Running command: ./install.sh..."
