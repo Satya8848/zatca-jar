@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # Step 1: Install jq
-echo "Java Installation..."
+# echo "Java Installation..."
 
-apt install default-jdk
+# apt install default-jdk
 
-export JAVA_HOME=/usr/bin/java
+# export JAVA_HOME=/usr/bin/java
 
-export PATH=$JAVA_HOME/bin:$PATH
+# export PATH=$JAVA_HOME/bin:$PATH
 
-source ~/.bashrc
+# source ~/.bashrc
 
 echo "Installing jq..."
 # Add code to download and install jq
