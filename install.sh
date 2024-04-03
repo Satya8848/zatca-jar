@@ -3,7 +3,7 @@
 # Step 1: Install jq
 echo "Java Installation..."
 
-sudo apt install default-jdk
+apt install default-jdk
 
 export JAVA_HOME=/usr/bin/java
 
@@ -13,8 +13,8 @@ source ~/.bashrc
 
 echo "Installing jq..."
 # Add code to download and install jq
-# Example: sudo apt-get install jq
-sudo apt-get install jq
+# Example: apt-get install jq
+apt-get install jq
 
 # Step 2: Download sdk.zip file
 echo "Downloading sdk.zip file..."
