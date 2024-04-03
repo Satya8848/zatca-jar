@@ -120,6 +120,6 @@ chmod +x fatoora
 echo "Installation completed successfully."
 
 # Step 10: To check installation, run fatoora -help
-echo "To check installation, run: fatoora -help"
-fatoora -help
+# echo "To check installation, run: fatoora -help"
+# fatoora -help
 
