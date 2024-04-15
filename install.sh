@@ -20,6 +20,7 @@ apt-get install jq
 echo "Downloading sdk.zip file..."
 # Add code to download sdk.zip file
 # Example: wget https://example.com/sdk.zip
+cd /home/frappe
 git clone https://github.com/aasif-patel/zatca_sdk3.3.git
 
 # Step 3: Run command sh ~/.bash_profile
