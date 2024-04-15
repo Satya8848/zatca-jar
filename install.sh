@@ -20,23 +20,23 @@ apt-get install jq
 echo "Downloading sdk.zip file..."
 # Add code to download sdk.zip file
 # Example: wget https://example.com/sdk.zip
-cd /home/frappe
-git clone https://github.com/aasif-patel/zatca_sdk3.3.git
+# cd /home/frappe/frappe-bench
+git clone https://github.com/aasif-patel/zatca_sdk3.3.git /home/frappe/frappe-bench/zatca_sdk3.3
 
 # Step 3: Run command sh ~/.bash_profile
 echo "Running command: touch ~/.bash_profile..."
-touch ~/.profile
+touch /home/frappe/.profile
 
 
 
 # Step 5: Navigate to the root folder of the sdk
 echo "Navigating to the root folder of the sdk..."
-cd zatca_sdk3.3
+# cd zatca_sdk3.3
 
 # Step 6: Run install.sh
 echo "Running command: ./install.sh..."
 
-export FATOORA_HOME="${PWD}"
+export FATOORA_HOME="/home/frappe/frappe-bench/zatca_sdk3.3"
 
 export PATH=$PATH:$FATOORA_HOME/Apps/
 #export PATH
@@ -44,33 +44,33 @@ export PATH=$PATH:$FATOORA_HOME/Apps/
 
 
 
-touch ~/.zshrc
-touch ~/.profile
+touch /home/frappe/.zshrc
+touch /home/frappe/.profile
 
 
 
 
-SDK_CONFIG="${PWD}/Configuration/config.json"
+SDK_CONFIG="/home/frappe/frappe-bench/zatca_sdk3.3/Configuration/config.json"
 
 
-echo "export PATH=$PATH:$FATOORA_HOME/Apps/" >> ~/.bash-profile
-echo "export FATOORA_HOME=${PWD}/Apps" >> ~/.bash-profile
-echo "export SDK_CONFIG=$SDK_CONFIG" >> ~/.bash-profile
+echo "export PATH=$PATH:$FATOORA_HOME/Apps/" >> /home/frappe/.bash-profile
+echo "export FATOORA_HOME=/home/frappe/frappe-bench/zatca_sdk3.3/Apps" >> /home/frappe/.bash-profile
+echo "export SDK_CONFIG=$SDK_CONFIG" >> /home/frappe/.bash-profile
 
-echo "export PATH=$PATH:$FATOORA_HOME/Apps/" >> ~/.zshrc
-echo "export FATOORA_HOME=${PWD}/Apps" >> ~/.zshrc
-echo "export SDK_CONFIG=$SDK_CONFIG" >> ~/.zshrc
-
-
+echo "export PATH=$PATH:$FATOORA_HOME/Apps/" >> /home/frappe/.zshrc
+echo "export FATOORA_HOME=/home/frappe/frappe-bench/zatca_sdk3.3/Apps" >> /home/frappe/.zshrc
+echo "export SDK_CONFIG=$SDK_CONFIG" >> /home/frappe/.zshrc
 
 
 
-source ~/.profile
-source ~/.zshrc
+
+
+source /home/frappe/.profile
+source /home/frappe/.zshrc
 
 cd Configuration
 
-parentDir="$(dirname "$PWD")"
+parentDir="$(dirname "/home/frappe/frappe-bench/zatca_sdk3.3")"
 
 xsdPath=$(jq -r '.xsdPath' defaults.json)
 xsdPathFileName="$(basename $xsdPath)"
@@ -108,7 +108,7 @@ cd ../
 
 # Step 7: Run sh ~/.bash_profile
 echo "Running command: sh ~/.bash_profile..."
-sh ~/.profile
+sh /home/frappe/.profile
 
 # Step 8: Navigate to $FATOORA_HOME
 echo "Navigating to $FATOORA_HOME..."
@@ -116,7 +116,8 @@ cd $FATOORA_HOME
 
 # Step 9: Run command chmod +x fatoora
 echo "Running command: chmod +x fatoora..."
-chmod +x fatoora
+chmod +x /home/frappe/frappe-bench/zatca_sdk3.3/Apps/fatoora
+chown -R frappe:frappe /home/frappe/
 
 echo "Installation completed successfully."
 
