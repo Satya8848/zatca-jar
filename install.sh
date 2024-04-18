@@ -112,12 +112,15 @@ sh /home/frappe/.profile
 
 # Step 8: Navigate to $FATOORA_HOME
 echo "Navigating to $FATOORA_HOME..."
-cd $FATOORA_HOME
+#cd $FATOORA_HOME
 
 # Step 9: Run command chmod +x fatoora
 echo "Running command: chmod +x fatoora..."
 chmod +x /home/frappe/frappe-bench/zatca_sdk3.3/Apps/fatoora
 chown -R frappe:frappe /home/frappe/
+cd /home/frappe/frappe-bench/apps/zatca2024/zatca_sdk3.3/Apps
+chmod +x fatoora
+
 
 echo "Installation completed successfully."
 
